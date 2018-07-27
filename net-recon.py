@@ -43,7 +43,7 @@ from argparse import ArgumentParser
 
 def banner():
 
-    with open('/opt/net-recon/banners/default.banner','r') as bfile:
+    with open('{}/banners/default.banner'.format(os.getcwd()),'r') as bfile:
         print bfile.read().strip()
 
     print ''
